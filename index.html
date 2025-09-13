@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mrudul Jambhulkar</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        nav {
+            background: #333;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #667eea;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        #about {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
+        #publications {
+            background: #f9f9f9;
+        }
+        #projects {
+            background: white;
+        }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .project-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .project-card h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+        .github-link {
+            margin-top: 10px;
+        }
+        .github-link a {
+            color: #1a0dab;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .github-link a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .contact-links a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-links a:hover {
+            color: #667eea;
+        }
+        @media (max-width: 768px) {
+            nav ul { flex-direction: column; }
+            nav li { margin: 10px 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mrudul Jambhulkar</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hey! I am Mrudul Jambhulkar, pursuing a Dual Degree (B.Tech. + M.Tech.) in Electrical Engineering with a specialization in Communication & Signal Processing at the Indian Institute of Technology Bombay. My interests span machine learning, VLSI design, computer architecture,  signal processing, and their intersections in real-world applications. As part of my dual degree project, I am currently working on machine learning techniques for image segmentation, knowledge distillation, and hyperspectral image analysis, with a particular focus on applications in agriculture and satellite imagery. </p>
+        <p>In my free time, I enjoy playing chess and listening to music.</p>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="project-card">
+            <h3>Autonomous Defect Estimation in Aluminum Plate and Prognosis Through Stochastic Process Modeling</h3>
+            <p>Mrudul Jambhulkar, Shivam Ojha, Amit Shelke, Anowarul Habib</p>
+            <p>This work presents an autonomous framework for defect estimation and prognosis in aluminum plates using advanced signal processing and stochastic modeling, achieving a MAPE of 9.9% in damage progression predictions.</p>
+            <div class="github-link"><a href="https://www.nature.com/articles/s41598-025-13189-8">DOI</a></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Application of AI-ML in Agriculture</h3>
+                <p>Conducted literature review on knowledge distillation techniques and Segment Anything Model (SAM) variants. Applied SAM on unlabeled multispectral datasets with DBSCAN for semantic masks. Implemented MSCG-Net and DeepLabV3, achieving mIoU scores of 0.70 and 0.79 on PhenoBench.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/DDP">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>LLM Decoding Techniques</h3>
+                <p>Implemented Greedy Decoding, Random Sampling with Temperature, Top-k, and Nucleus Sampling on LLaMA-2-7B for Hindi-to-English translation. Built Trie-based Word-Constrained Decoding improving ROUGE scores. Explored Medusa speculative decoding for efficiency.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Advanced-Machine-Learning-CS726-Assignments/tree/main/LLMs_a3">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>Stock Market Analysis</h3>
+                <p>Predicted NIFTY50 changes using LSTM, SVM, and Random Forest. Optimized hyperparameters via grid search. Developed a trading strategy maximizing profit from LSTM-predicted overnight gains.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Stock-Market-Analysis">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>Brain Tumor Classification</h3>
+                <p>Developed Dual Wavelet Attention Network (DWAN) integrating 2D Wavelet Transform with attention in ResNet18. Achieved 90.05% accuracy on 3,264 MRI images, outperforming baseline ResNet18 (82.58%).</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Wavelets/blob/main/Dual%20Wavelet%20Attention%20Networks%20.pdf">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>Denoising Diffusion Probabilistic Model (DDPM)</h3>
+                <p>Implemented unconditional DDPM in PyTorch on synthetic datasets, achieving NLL of 0.038. Trained Conditional DDPM with Classifier-Free Guidance, tuning for up to 84% classification accuracy.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Advanced-Machine-Learning-CS726-Assignments/tree/main/DDPM_a2">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>Noise Addition in Neural Network</h3>
+                <p>Developed custom noisy optimizer injecting annealed Gaussian noise into gradients. Trained CNN on CIFAR-10 achieving 80.15% accuracy, reducing overfitting compared to no-noise model.</p>
+                <div class="github-link"><a href="https://github.com/yourusername/noise-addition-nn">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>Wine Quality Prediction</h3>
+                <p>Used SVR with RBF kernel and Random Forest on wine datasets after feature standardization and correlation analysis. Deployed RF model via Streamlit GUI for interactive predictions.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/EE-769_Introduction_to_Machine_Learning/blob/main/A2_21d070044.ipynb">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>Inference Using Message Passing</h3>
+                <p>Implemented DFS traversal for message passing on junction trees. Performed graph triangulation, extracted cliques, and propagated potentials for efficient inference.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Advanced-Machine-Learning-CS726-Assignments/tree/main/Message_Passing_algo_a1">GitHub</a></div>
+            </div>
+
+
+
+            <div class="project-card">
+                <h3>Reversible Logic Circuit Synthesis</h3>
+                <p>Synthesized quantum circuits from truth tables using heuristic quantum cost minimization. Used priority queue with PPRM expansions and Qiskit for Toffoli gate networks.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Reversible-Quantum-Circuit-Synthesis">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>RISC-V Processor</h3>
+                <p>Designed RISC-V SoC in Verilog with custom core, AXI4 converter, interrupt controller, and peripherals (UART, SPI, GPIO, Timer) for RV32I. Verified in Vivado and deployed on PYNQ-Z2 FPGA.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/RISCV-Processor">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>Superscalar Processor Design</h3>
+                <p>Created six-stage, 2-way out-of-order 16-bit superscalar microprocessor with branch predictor. Implemented register file, memory banks, reservation station, and reorder buffer in Verilog.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Superscalar-Processor-Design">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>Dadda Multiplier</h3>
+                <p>Implemented 16x16 Dadda multiplier in Verilog with Brent-Kung adder and AXI4-Lite interface. Validated on PYNQ-Z2 board using ILA/VIO for bitstream generation.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Dadda-Multiplier">GitHub</a></div>
+            </div>
+
+            <div class="project-card">
+                <h3>Ferroelectric Capacitance Measurement</h3>
+                <p>Designed PCB system for hysteresis measurement up to 13.9 kHz using waveforms. Programmed ADC in VHDL on DE0-Nano FPGA; developed Python GUI for data visualization.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Measurement-device-for-ferroelectric-capacitance">GitHub</a></div>
+            </div>
+
+            
+
+            <div class="project-card">
+                <h3>Phase Detector</h3>
+                <p>Designed half-rate phase detector in Cadence Virtuoso for 20 Gbps data (gain 0.2801 V/rad). Integrated VCO and PLL with 52.4° phase margin.</p>
+                <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/EE800-High-Speed-Interconnects">GitHub</a></div>
+            </div>
+
+            
+
+            
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mrudul Jambhulkar. Built with ❤️ using GitHub Pages.</p>
+        <div class="contact-links">
+            <a href="mailto:mnjambhulkar2003@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/mrudul-jambhulkar-9383b9223/">LinkedIn</a>
+            <a href="https://github.com/Mrudul-Jambhulkar">GitHub</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
