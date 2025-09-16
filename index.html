@@ -64,6 +64,12 @@
         #projects {
             background: white;
         }
+        #contact {
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 20px;
+        }
         .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -96,21 +102,35 @@
         .github-link a:hover {
             text-decoration: underline;
         }
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .contact-links a {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact-links a:hover {
+            color: #667eea;
+        }
+        .contact-links img {
+            width: 24px;
+            height: 24px;
+        }
         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 20px;
             margin-top: 40px;
-        }
-        .contact-links a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .contact-links a:hover {
-            color: #667eea;
         }
         @media (max-width: 768px) {
             nav ul { flex-direction: column; }
@@ -128,12 +148,13 @@
             <li><a href="#about">About</a></li>
             <li><a href="#publications">Publications</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hey! I am Mrudul Jambhulkar, pursuing a Dual Degree (B.Tech. + M.Tech.) in Electrical Engineering with a specialization in Communication & Signal Processing at the Indian Institute of Technology Bombay. My interests span machine learning, VLSI design, computer architecture,  signal processing, and their intersections in real-world applications. As part of my dual degree project, I am currently working on machine learning techniques for image segmentation, knowledge distillation, and hyperspectral image analysis, with a particular focus on applications in agriculture and satellite imagery. </p>
+        <p>Hey! I am Mrudul Jambhulkar,  a fifth-year undergraduate pursuing a Dual Degree (B.Tech. + M.Tech.) in Electrical Engineering with a specialization in Communication & Signal Processing at the Indian Institute of Technology Bombay. My interests span machine learning, VLSI design, computer architecture, signal processing, and their intersections in real-world applications. As part of my dual degree project, I am currently working on machine learning techniques for image segmentation, knowledge distillation, and hyperspectral image analysis, with a particular focus on applications in agriculture and satellite imagery. </p>
         <p>In my free time, I enjoy playing chess and listening to music.</p>
     </section>
 
@@ -198,8 +219,6 @@
                 <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Advanced-Machine-Learning-CS726-Assignments/tree/main/Message_Passing_algo_a1">GitHub</a></div>
             </div>
 
-
-
             <div class="project-card">
                 <h3>Reversible Logic Circuit Synthesis</h3>
                 <p>Synthesized quantum circuits from truth tables using heuristic quantum cost minimization. Used priority queue with PPRM expansions and Qiskit for Toffoli gate networks.</p>
@@ -230,26 +249,34 @@
                 <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/Measurement-device-for-ferroelectric-capacitance">GitHub</a></div>
             </div>
 
-            
-
             <div class="project-card">
                 <h3>Phase Detector</h3>
                 <p>Designed half-rate phase detector in Cadence Virtuoso for 20 Gbps data (gain 0.2801 V/rad). Integrated VCO and PLL with 52.4° phase margin.</p>
                 <div class="github-link"><a href="https://github.com/Mrudul-Jambhulkar/EE800-High-Speed-Interconnects">GitHub</a></div>
             </div>
+        </div>
+    </section>
 
-            
-
-            
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-links">
+            <a href="mailto:mnjambhulkar2003@gmail.com">
+                <img src="https://img.icons8.com/ios-filled/24/333333/email.png" alt="Email">
+                Email
+            </a>
+            <a href="https://www.linkedin.com/in/mrudul-jambhulkar-9383b9223/">
+                <img src="https://img.icons8.com/ios-filled/24/333333/linkedin.png" alt="LinkedIn">
+                LinkedIn
+            </a>
+            <a href="https://github.com/Mrudul-Jambhulkar">
+                <img src="https://img.icons8.com/ios-filled/24/333333/github.png" alt="GitHub">
+                GitHub
+            </a>
+        </div>
     </section>
 
     <footer>
         <p>&copy; 2025 Mrudul Jambhulkar. Built with ❤️ using GitHub Pages.</p>
-        <div class="contact-links">
-            <a href="mailto:mnjambhulkar2003@gmail.com">Email</a>
-            <a href="https://www.linkedin.com/in/mrudul-jambhulkar-9383b9223/">LinkedIn</a>
-            <a href="https://github.com/Mrudul-Jambhulkar">GitHub</a>
-        </div>
     </footer>
 
     <script>
